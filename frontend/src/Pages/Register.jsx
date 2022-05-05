@@ -41,9 +41,9 @@ function Register() {
  };
  const onSubmit = (e) => {
   e.preventDefault();
-  // if (password !== password2) {
-  //  toast.error("Passwords do not match");
-  // } else {
+  if (password !== password2) {
+   toast.error("Passwords do not match");
+  } else {
    const userData = {
     name,
     email,
@@ -51,7 +51,7 @@ function Register() {
    };
 
    dispatch(register(userData));
-  // }
+  }
  };
  if (isLoading) {
   <Spinner />;
