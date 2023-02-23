@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = '/api/user/'
+const API_URL = 'https://goals-backend-kbyx.onrender.com/api/user/'
 
 //Register user
 const register = async(userData) => {
